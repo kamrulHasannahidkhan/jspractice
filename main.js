@@ -1,6 +1,9 @@
-function findMax(arr) {
-  if (arr.length === 0) return null;
-  return Math.max(...arr);
+function titleCase(str) {
+  return str
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 }
 
-console.log(findMax([3, 7, 2, 9, 5])); // আউটপুট: 9
+console.log(titleCase("javascript is awesome")); // আউটপুট: "Javascript Is Awesome"
