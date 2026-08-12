@@ -1,10 +1,3 @@
-const language = {
-    name: "JavaScript",
-    year: 1995, 
-    founder: "Brendan Eich",
-};
+const array = [1,2,2,2,3,4,5,5,6,7,8,9,9];
 
-const {name, year, founder} = language;
-console.log(name); // "JavaScript"
-console.log(year); // 1995
-console.log(founder); // "Brendan Eich"
+console.log([...new Set(array)]);
