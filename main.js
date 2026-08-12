@@ -1,16 +1,11 @@
-const str = "java script is fun";
+let array = [1,2,3,4,5];
 
-function sortWords(data){
-    const dataAsArray  = data.split(" ");
 
-    dataAsArray.sort((a, b) => {
-        return a.length - b.length;
-    });
+let temp =array[0];
+array[0] = array[4];
+array[4] = temp;
 
-    return dataAsArray.join(" ").split(" ");
-}
-
-console.log(sortWords(str)); // ["fun", "is", "script", "java"]
+console.log(array);
 
 
 
