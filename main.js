@@ -1,5 +1,5 @@
 function areAnagrams(str1, str2) {
-  const format = str => str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').join('');
+  const format = str => str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').sort().join('');
   return format(str1) === format(str2);
 }
 
