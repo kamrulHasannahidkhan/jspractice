@@ -1,3 +1,6 @@
-const array = [1,2,2,2,3,4,5,5,6,7,8,9,9];
+function findMax(arr) {
+  if (arr.length === 0) return null;
+  return Math.max(...arr);
+}
 
-console.log([...new Set(array)]);
+console.log(findMax([3, 7, 2, 9, 5])); // আউটপুট: 9
