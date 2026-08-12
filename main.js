@@ -1,9 +1,7 @@
-function titleCase(str) {
-  return str
-    .toLowerCase()
-    .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+function areAnagrams(str1, str2) {
+  const format = str => str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').join('');
+  return format(str1) === format(str2);
 }
 
-console.log(titleCase("javascript is awesome")); // আউটপুট: "Javascript Is Awesome"
+console.log(areAnagrams("listen", "silent")); // true
+console.log(areAnagrams("hello", "world"));   // false
