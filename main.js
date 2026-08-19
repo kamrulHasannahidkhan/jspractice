@@ -1,7 +1,4 @@
-function areAnagrams(str1, str2) {
-  const format = str => str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').sort().join('');
-  return format(str1) === format(str2);
+const square = function(n){
+  return n * n;
 }
-
-console.log(areAnagrams("listen", "silent")); // true
-console.log(areAnagrams("hello", "world"));   // false
+console.log(square(5));
