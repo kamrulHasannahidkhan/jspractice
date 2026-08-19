@@ -1,4 +1,4 @@
-const square = function(n){
+const square = (n) =>{
   return n * n;
 }
 console.log(square(5));
